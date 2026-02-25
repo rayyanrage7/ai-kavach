@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth theme transition for entire app */
+html {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Prevent flash on theme load */
+html.dark {
+  color-scheme: dark;
+}
